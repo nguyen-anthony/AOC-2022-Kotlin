@@ -1,7 +1,7 @@
 package aoc2022
 
-import readInput
-import alphaToInt
+import utils.readInput
+import utils.alphaToInt
 
 fun main() {
 
@@ -19,7 +19,7 @@ fun main() {
                 }
             }
 
-            sum += alphaToInt(commonChar.toString())!!
+            sum += alphaToInt(commonChar)!!
         }
         return sum
     }
@@ -34,7 +34,7 @@ fun main() {
                     commonChar = char
                 }
             }
-            sum += alphaToInt(commonChar.toString())!!
+            sum += alphaToInt(commonChar)!!
         }
         return sum
     }

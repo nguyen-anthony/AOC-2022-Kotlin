@@ -1,6 +1,6 @@
 package aoc2021
 
-import readInput
+import utils.readInput
 
 fun main() {
 

@@ -1,6 +1,6 @@
 package aoc2022
 
-import utils.readInput
+import utils.readInputAsList
 
 fun main() {
 
@@ -44,12 +44,12 @@ fun main() {
         return score
     }
 
-    val input = readInput("Day02", "2022")
+    val input = readInputAsList("Day02", "2022")
     println(part1(input))
     println(part2(input))
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day02_test", "2022")
+    val testInput = readInputAsList("Day02_test", "2022")
     check(part1(testInput) == 31)
     check(part2(testInput) == 32)
 }

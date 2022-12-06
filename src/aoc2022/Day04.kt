@@ -1,6 +1,6 @@
 package aoc2022
 
-import utils.readInput
+import utils.readInputAsList
 
 fun main() {
 
@@ -41,12 +41,12 @@ fun main() {
     }
 
 
-    val input = readInput("Day04", "2022")
+    val input = readInputAsList("Day04", "2022")
     println(part1(input))
     println(part2(input))
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day04_test", "2022")
+    val testInput = readInputAsList("Day04_test", "2022")
     check(part1(testInput) == 2)
     check(part2(testInput) == 4)
 }

@@ -1,6 +1,6 @@
 package aoc2022
 
-import utils.readInput
+import utils.readInputAsList
 import utils.alphaToInt
 
 fun main() {
@@ -39,12 +39,12 @@ fun main() {
         return sum
     }
 
-    val input = readInput("Day03", "2022")
+    val input = readInputAsList("Day03", "2022")
     println(part1(input))
     println(part2(input))
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day03_test", "2022")
+    val testInput = readInputAsList("Day03_test", "2022")
     check(part1(testInput) == 77)
     check(part2(testInput) == 16)
 }

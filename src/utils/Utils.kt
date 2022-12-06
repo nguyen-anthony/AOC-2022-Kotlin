@@ -10,8 +10,9 @@ val alphaToIntMap = ('a'..'z').zip(1..26).plus(('A'..'Z').zip(27..52)).associate
 /**
  * Reads lines from the given input txt file.
  */
-fun readInput(name: String, year: String) = File("src/aoc$year/resources", "$name.txt").readLines()
+fun readInputAsList(name: String, year: String) = File("src/aoc$year/resources", "$name.txt").readLines()
 
+fun readInputAsString(name: String, year: String) = File("src/aoc$year/resources", "$name.txt").readText()
 /**
  * Converts string to utils.md5 hash.
  */

@@ -1,8 +1,6 @@
 package aoc2022
-
 import utils.readInputAsList
 import kotlin.math.max
-
 fun main() {
 
     fun isVisibleOutside(map: List<List<Int>>, row: List<Int>, rowIndex: Int, colIndex: Int) : Boolean {
@@ -88,8 +86,6 @@ fun main() {
             }
         }
     }
-
-
 
     val input = readInputAsList("Day08", "2022").map { line -> line.toList().map { it.digitToInt() } }
 
